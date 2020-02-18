@@ -12,6 +12,7 @@ Accumulator ACC(Sum,load_Acc,clear_Acc,Acc,D_out,CLK);
         #10 Sum = 17'b11111000010101000; load_Acc = 1; clear_Acc = 0;
         #10 Sum = 17'b01010101001010111; load_Acc = 1; clear_Acc = 0; 
     end
+  
   initial 
     begin
       CLK = 0;
