@@ -4,6 +4,7 @@ reg [16:0]Sum; reg CLK, load_Acc, clear_Acc;
 wire D_out; wire [16:0]Acc;
 
 Accumulator ACC(Sum,load_Acc,clear_Acc,Acc,D_out,CLK);
+  
   initial 
     begin
       $monitor($time, " Sum=%b, load_Acc=%b, clear_Acc=%b, Acc=%b, D_out=%b, CLK=%b", Sum,load_Acc,clear_Acc,Acc,D_out,CLK);
