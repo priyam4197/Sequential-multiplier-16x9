@@ -14,15 +14,15 @@ wire SFT_MY;
 
 always @(posedge CLK) 
 begin
-	if (LOAD_MX) begin
-	mx <= IN_MX; 
-	end
-	if (LOAD_MY)begin
-	my <= IN_MY;
-	end
-	else if(SFT_MY) begin
-	my <= (my>>1);
-	end
+if (LOAD_MX) begin
+mx <= IN_MX; 
+end
+if (LOAD_MY)begin
+my <= IN_MY;
+end
+else if(SFT_MY) begin
+my <= (my>>1);
+end
 end
 
 assign MY_BIT = my[0];
