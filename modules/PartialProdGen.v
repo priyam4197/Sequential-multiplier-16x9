@@ -7,13 +7,12 @@ output [15:0]PPOUT;
 
 reg [15:0]PPOUT;
 
-always @(*)
-
-begin
-if (M_BIT == 0)
-PPOUT = 0;
-else
-PPOUT = MX;
-end
+  always @(*)
+    begin
+      if (M_BIT == 0)
+        PPOUT = 0;
+      else
+        PPOUT = MX;
+    end
 
 endmodule
