@@ -1,4 +1,4 @@
-//sequencer points to next state based on present step
+//sequencer points to next state based on present state
 
 module sequencer(INAddr,CLK,RST,OUTAddr);
 
