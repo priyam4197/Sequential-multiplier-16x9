@@ -31,7 +31,6 @@ sequencer SEQ(NextState,CLK,RESET,PrsntState);
 
 
 loadIn INPUT(in_Mx,in_My,load_Mx,load_My,CLK,Mx,My,My_bit,shift_My);
-//ShiftMy SHIFT_My(My,load_My,shift_My,CLK,My_bit);
 PPGen PPG(Mx,My_bit,PP);
 Adder ADD(PP,Acc[16:1],Sum);
 Accumulator ACC(Sum,load_Acc,clear_Acc,Acc,D_out,CLK);
